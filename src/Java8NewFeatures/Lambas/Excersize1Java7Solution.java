@@ -12,25 +12,30 @@ public class Excersize1Java7Solution {
 		
 		List<Person> ListOfPeople = new ArrayList<Person>();
 		ListOfPeople.add(new Person("James","kathy",91));
-		System.out.println(ListOfPeople);
-		
+		System.out.println("printing LOP: "+ListOfPeople);
+		ListOfPeople.add(new Person("Macky","Jacky",25));
+		System.out.println("printing LOP: "+ListOfPeople);
 		List<Integer> marks= new ArrayList<Integer>();
+		
 		marks.add(34);
-		marks.add(51);
 		marks.add(80);
+		marks.add(51);
+		
+		System.out.println("Before sort: "+marks);
 		//Ascending order:
         Collections.sort(marks); 
-        System.out.println(marks);
+        System.out.println("After sort: "+marks);
+        
         //Descending order:
 		 Collections.sort(marks, Collections.reverseOrder()); 
-		 System.out.println(marks);
+		 System.out.println("descending sort: "+marks);
 		 
 		 int[] ints = {11367, 11358, 11421, 11530, 11491, 11218, 11789};
 		 Arrays.sort(ints);
 		 for(int i:ints)
 			 System.out.println("int is:"+i);
-		 //List l= Arrays.asList(ints);
-		 //System.out.println(l); not printing values
+		 List l= Arrays.asList(ints);
+		 System.out.println("after converting primitive array to list: "+l); //not printing values
 		
 		List<Person> people =Arrays.asList(
 				new Person("Charles","Dickers", 60),
